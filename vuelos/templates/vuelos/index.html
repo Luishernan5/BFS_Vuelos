@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BFS Vuelos</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <h1>✈️ Buscar ruta de vuelos</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <label>Ciudad de inicio:</label>
+        <select name="inicio" required>
+            <option value="">Selecciona...</option>
+            {% for ciudad in ciudades %}
+                <option value="{{ ciudad }}">{{ ciudad }}</option>
+            {% endfor %}
+        </select>
+
+        <label>Ciudad destino:</label>
+        <select name="destino" required>
+            <option value="">Selecciona...</option>
+            {% for ciudad in ciudades %}
+                <option value="{{ ciudad }}">{{ ciudad }}</option>
+            {% endfor %}
+        </select>
+
+        <button type="submit">Buscar ruta</button>
+    </form>
+
+    {% if resultado %}
+        <div class="resultado">
+            <h2>Ruta encontrada:</h2>
+            <p>
+                {% for ciudad in resultado %}
+                    {{ ciudad }} →
+                {% endfor %}
+            </p>
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
