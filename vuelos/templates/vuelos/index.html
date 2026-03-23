@@ -9,7 +9,7 @@
 <body>
 
 <div class="container">
-    <h1>✈️ Buscar ruta de vuelos</h1>
+    <h1>Buscar ruta de vuelos</h1>
 
     <form method="POST">
         {% csrf_token %}
@@ -30,7 +30,7 @@
             {% endfor %}
         </select>
 
-        <button type="submit">Buscar ruta</button>
+        <button type="submit">Buscar ruta optima</button>
     </form>
 
     {% if resultado %}
