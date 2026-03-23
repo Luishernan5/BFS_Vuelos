@@ -1,38 +1,48 @@
-/* Importar fuente moderna */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap');
+/* Fuentes elegantes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@400;700&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #e3f2fd, #f8fbff);
-    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f1f8f6, #e8f5f2);
+    font-family: 'Inter', sans-serif;
 }
 
 /* Contenedor principal */
 .container {
-    max-width: 500px;
-    margin: 80px auto;
-    padding: 40px;
+    max-width: 520px;
+    margin: 70px auto;
+    padding: 45px;
     background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
     text-align: center;
 }
 
 /* Título */
 h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    color: #2c3e50;
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    color: #2e3d3a;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo */
+.subtitle {
+    font-size: 14px;
+    color: #7a8c88;
     margin-bottom: 25px;
 }
 
 /* Labels */
 label {
     display: block;
-    margin: 15px 0 5px;
-    color: #555;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #4f5f5c;
     font-weight: 500;
+    text-align: left;
 }
 
 /* Selects */
@@ -40,44 +50,47 @@ select {
     width: 100%;
     padding: 12px;
     border-radius: 10px;
-    border: 1px solid #dcdcdc;
-    background: #f9f9f9;
+    border: 1px solid #dfe7e5;
+    background: #f9fbfb;
     font-size: 14px;
     transition: all 0.3s ease;
 }
 
 select:focus {
     outline: none;
-    border-color: #64b5f6;
+    border-color: #6fcf97;
     background: #ffffff;
 }
 
 /* Botón */
 button {
-    margin-top: 25px;
+    margin-top: 28px;
     width: 100%;
-    padding: 12px;
-    background: #64b5f6;
+    padding: 13px;
+    background: #6fcf97;
     border: none;
     border-radius: 12px;
     color: white;
     font-size: 15px;
     font-weight: 600;
+    letter-spacing: 0.5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 button:hover {
-    background: #42a5f5;
+    background: #4bbf80;
     transform: translateY(-2px);
 }
 
 /* Resultado */
 .resultado {
-    margin-top: 25px;
-    padding: 15px;
-    background: #e3f2fd;
-    border-radius: 12px;
-    color: #1565c0;
+    margin-top: 30px;
+    padding: 18px;
+    background: #f0faf5;
+    border-left: 4px solid #6fcf97;
+    border-radius: 10px;
+    color: #2e7d5b;
+    font-size: 15px;
     font-weight: 500;
 }
